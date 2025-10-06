@@ -1,0 +1,21 @@
+
+
+
+server:
+  port: 8081
+spring:
+  datasource:
+    url: jdbc:h2:mem:userdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate:
+    ddl-auto: update
+    show-sql: true
+
+
+# JWT config - THIS SECRET MUST MATCH AUTH SERVICE (or use public key if asymmetric)
+security:
+  jwt:
+    secret: "replace_with_the_same_base64_secret_used_by_auth_service"

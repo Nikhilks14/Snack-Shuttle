@@ -1,0 +1,17 @@
+config
+│ ├─ SecurityConfig.java
+│ └─ JwtAuthFilter.java
+├─ controller
+│ ├─ UserController.java
+│ └─ AdminUserController.java
+├─ dto
+│ ├─ UserDto.java
+│ ├─ UpdateUserDto.java
+│ └─ ChangePasswordDto.java
+├─ model
+│ ├─ AppUser.java
+│ └─ Role.java
+├─ repository
+│ └─ UserRepository.java
+└─ service
+└─ UserService.java
