@@ -1,5 +1,10 @@
 package com.foodDelivery.UserService.dto;
 
+import com.foodDelivery.UserService.model.Role;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

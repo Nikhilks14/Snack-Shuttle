@@ -1,5 +1,15 @@
 package com.foodDelivery.UserService.services;
 
+import com.foodDelivery.UserService.dto.UpdateUserDto;
+import com.foodDelivery.UserService.entity.AppUser;
+import com.foodDelivery.UserService.model.Role;
+import com.foodDelivery.UserService.repo.UserRepository;
+import jakarta.transaction.Transactional;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
 @Service
 @RequiredArgsConstructor
 public class UserService {
@@ -35,7 +45,7 @@ public class UserService {
 
 
     // Admin only
-    public AppUser changeRole(Long userId, com.example.userservice.model.Role role) {
+    public AppUser changeRole(Long userId, Role role) {
         AppUser u = getById(userId);
         u.setRole(role);
         return userRepository.save(u);

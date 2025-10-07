@@ -12,6 +12,11 @@
 
     <modules>
         <module>AuthService</module>
+        <module>RestaurantService</module>
+        <module>OrderService</module>
+        <module>MenuService</module>
+        <module>CartService</module>
+        <module>UserService</module>
     </modules>
 
     <dependencyManagement>

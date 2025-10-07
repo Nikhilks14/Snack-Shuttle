@@ -1,8 +1,9 @@
 package com.foodDelivery.UserService.entity;
 
 import com.foodDelivery.UserService.model.Role;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Enumerated;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

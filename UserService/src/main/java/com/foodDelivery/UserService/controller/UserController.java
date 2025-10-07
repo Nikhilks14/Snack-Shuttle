@@ -1,5 +1,13 @@
 package com.foodDelivery.UserService.controller;
 
+import com.foodDelivery.UserService.dto.UpdateUserDto;
+import com.foodDelivery.UserService.dto.UserDto;
+import com.foodDelivery.UserService.entity.AppUser;
+import com.foodDelivery.UserService.services.UserService;
+import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
 @RestController
 @RequestMapping("/api/users")
 @RequiredArgsConstructor
