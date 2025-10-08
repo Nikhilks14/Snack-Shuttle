@@ -1,21 +1,23 @@
-
-
-
 server:
-  port: 8081
+  port: 8082
+
 spring:
   datasource:
-    url: jdbc:h2:mem:userdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
-    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:restaurantdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
     username: sa
     password:
+    driver-class-name: org.h2.Driver
   jpa:
     hibernate:
-    ddl-auto: update
+      ddl-auto: update
     show-sql: true
 
+jwt:
+  # Option A: HMAC secret (HS256) — simple, used if Auth service issues HS256 tokens and shares secret
+  secret: my-very-secret-key-change-me
 
-# JWT config - THIS SECRET MUST MATCH AUTH SERVICE (or use public key if asymmetric)
-security:
-  jwt:
-    secret: "replace_with_the_same_base64_secret_used_by_auth_service"
+  # Option B: OR use remote introspection endpoint (Auth Service). Uncomment and configure if using introspection.
+  # introspection:
+  #   url: http://auth-service:8080/auth/introspect
+  #   client-id: restaurant-service
+  #   client-secret: client-secret

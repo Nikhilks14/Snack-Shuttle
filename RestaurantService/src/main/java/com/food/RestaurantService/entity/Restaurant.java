@@ -3,11 +3,12 @@ package com.food.RestaurantService.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.util.List;
+import java.util.*;
 
 @Entity
 @Table(name = "restaurants")
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
@@ -17,15 +18,18 @@ public class Restaurant {
     private Long id;
 
     private String name;
+
     private String address;
-    private String phone;
-    private Boolean active = true;
 
-    @OneToMany(mappedBy = "restaurant", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
-    private List<MenuItem> menuItems;
+    private boolean available = true;
 
-    @ElementCollection
+    // store multiple cuisines
+    @ElementCollection(targetClass = Cuisine.class, fetch = FetchType.EAGER)
     @CollectionTable(name = "restaurant_cuisines", joinColumns = @JoinColumn(name = "restaurant_id"))
-    @Column(name = "cuisine")
-    private List<String> cuisines;
+    @Enumerated(EnumType.STRING)
+    private Set<Cuisine> cuisines = new HashSet<>();
+
+    // OneToMany menus
+    @OneToMany(mappedBy = "restaurant", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    private List<Menu> menus = new ArrayList<>();
 }

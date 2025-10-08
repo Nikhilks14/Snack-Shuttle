@@ -1,10 +1,10 @@
-package com.food.RestaurantService.entity;
+package com.food.MenuService.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
 
+
 @Entity
-@Table(name = "menu_items")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -15,10 +15,22 @@ public class MenuItem {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+
     private String name;
+
+
+    @Column(length = 1000)
     private String description;
+
+
     private double price;
+
+
+    private String category; // e.g. "Starters", "Main", "Dessert"
+
+
     private boolean available = true;
+
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "menu_id")
