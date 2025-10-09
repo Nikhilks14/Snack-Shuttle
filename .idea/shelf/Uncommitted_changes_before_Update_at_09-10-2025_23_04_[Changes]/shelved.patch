@@ -1,0 +1,11 @@
+Index: AuthService/src/main/resources/application.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>spring.application.name=AuthService\r\n
+===================================================================
+diff --git a/AuthService/src/main/resources/application.properties b/AuthService/src/main/resources/application.properties
+--- a/AuthService/src/main/resources/application.properties	
++++ b/AuthService/src/main/resources/application.properties	
+@@ -1,1 +1,2 @@
+ spring.application.name=AuthService
++
