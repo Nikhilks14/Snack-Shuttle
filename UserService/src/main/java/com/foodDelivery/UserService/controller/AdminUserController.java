@@ -1,5 +1,17 @@
 package com.foodDelivery.UserService.controller;
 
+import com.foodDelivery.UserService.dto.UserDto;
+import com.foodDelivery.UserService.entity.AppUser;
+import com.foodDelivery.UserService.model.Role;
+import com.foodDelivery.UserService.services.UserService;
+import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
 @RestController
 @RequestMapping("/api/admin/users")
 @RequiredArgsConstructor

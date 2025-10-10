@@ -1,5 +1,6 @@
-package com.food.authservice;
+package com.food.authservice.controller;
 
+import com.food.authservice.AuthService;
 import com.food.authservice.Request.AuthRequest;
 import com.food.authservice.response.AuthResponse;
 import lombok.RequiredArgsConstructor;
