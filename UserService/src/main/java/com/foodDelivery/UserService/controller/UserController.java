@@ -6,6 +6,7 @@ import com.foodDelivery.UserService.entity.AppUser;
 import com.foodDelivery.UserService.services.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -17,7 +18,7 @@ public class UserController {
 
     // returns logged-in user details (token must be valid)
     @GetMapping("/me")
-    public ResponseEntity<UserDto> me(org.springframework.security.core.Authentication authentication) {
+    public ResponseEntity<UserDto> me(Authentication authentication) {
 // authentication.getName() returns subject (email) set by JwtAuthFilter
         String email = authentication.getName();
         AppUser u = userService.getByEmail(email);
@@ -25,7 +26,7 @@ public class UserController {
         return ResponseEntity.ok(dto);
     }
     @PutMapping("/me")
-    public ResponseEntity<UserDto> updateMe(org.springframework.security.core.Authentication authentication,
+    public ResponseEntity<UserDto> updateMe(Authentication authentication,
                                             @RequestBody UpdateUserDto dto) {
         String email = authentication.getName();
         AppUser u = userService.getByEmail(email);

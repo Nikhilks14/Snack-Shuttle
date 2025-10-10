@@ -19,4 +19,4 @@ spring:
 # JWT config - must match your auth service
 security:
   jwt:
-    secret: "replace_with_the_same_base64_secret_used_by_auth_service"
+    secret: "bW92aW5nbWFwc2Nob29sc2hvcnRncmF2aXR5YmVjb21pbmdicmVlemVmbGFtZWhlcnM="

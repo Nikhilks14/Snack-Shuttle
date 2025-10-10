@@ -4,114 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c3ccf88-43f9-4d2f-9ffa-9e153a0fd951" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-<<<<<<< HEAD
+    <list default="true" id="01d4f137-f0a8-4faf-a598-c4cbc2c87061" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/food/authservice/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/food/authservice/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/foodDelivery/UserService/controller/AdminUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/foodDelivery/UserService/controller/AdminUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/resources/application.yml" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/pom.xml" afterDir="false" />
->>>>>>> ff108cbcd6c4c43dd713d06ca63e471576a6989e
+      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/food/authservice/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/food/authservice/JwtService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/foodDelivery/UserService/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/foodDelivery/UserService/controller/UserController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;SinghDev1410&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Nikhilks14/Snack-Shuttle.git&quot;,
-    &quot;accountId&quot;: &quot;b2ad1170-c522-4eb4-ac1e-c504b4448d27&quot;
-  }
-}</component>
-  <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 8
-}</component>
-  <component name="ProjectId" id="33jWngFCT5kFpLRIgYx0Cdqr7ZB" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
-  </component>
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.AuthServiceApplication.executor": "Run",
-<<<<<<< HEAD
     "Application.UserServiceApplication.executor": "Run",
-=======
-    "Maven.AuthService [clean].executor": "Run",
->>>>>>> ff108cbcd6c4c43dd713d06ca63e471576a6989e
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-<<<<<<< HEAD
-    "last_opened_file_path": "F:/ZMyProject/Food/AuthService/src/main/resources",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
-=======
-    "last_opened_file_path": "F:/1Spring Boot/Snack-Shuttle/AuthService/src/main/java",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
->>>>>>> ff108cbcd6c4c43dd713d06ca63e471576a6989e
+    "git-widget-placeholder": "main2"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-<<<<<<< HEAD
-      <recent name="F:\ZMyProject\Food\AuthService\src\main\resources" />
-=======
-      <recent name="F:\1Spring Boot\Snack-Shuttle\AuthService\src\main\java" />
-      <recent name="F:\1Spring Boot\Snack-Shuttle\AuthService\src\main\java\com\food\authservice" />
->>>>>>> ff108cbcd6c4c43dd713d06ca63e471576a6989e
-      <recent name="F:\ZMyProject\Food\MenuService\src\main\resources" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.food.MenuService" />
-    </key>
-  </component>
-<<<<<<< HEAD
   <component name="RunManager" selected="Application.UserServiceApplication">
-=======
-  <component name="RunManager">
->>>>>>> ff108cbcd6c4c43dd713d06ca63e471576a6989e
     <configuration name="AuthServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.food.authservice.AuthServiceApplication" />
       <module name="AuthService" />
       <extension name="coverage">
         <pattern>
-<<<<<<< HEAD
-          <option name="PATTERN" value="com.food.authservice.controller.*" />
-=======
           <option name="PATTERN" value="com.food.authservice.*" />
->>>>>>> ff108cbcd6c4c43dd713d06ca63e471576a6989e
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,7 +39,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-<<<<<<< HEAD
     <configuration name="UserServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.foodDelivery.UserService.UserServiceApplication" />
       <module name="UserService" />
@@ -129,41 +48,18 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-=======
-    <configuration default="true" type="JetRunConfigurationType">
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <option name="filePath" />
->>>>>>> ff108cbcd6c4c43dd713d06ca63e471576a6989e
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-<<<<<<< HEAD
         <item itemvalue="Application.UserServiceApplication" />
-=======
->>>>>>> ff108cbcd6c4c43dd713d06ca63e471576a6989e
         <item itemvalue="Application.AuthServiceApplication" />
       </list>
     </recent_temporary>
   </component>
-<<<<<<< HEAD
-=======
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
->>>>>>> ff108cbcd6c4c43dd713d06ca63e471576a6989e
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="4c3ccf88-43f9-4d2f-9ffa-9e153a0fd951" name="Changes" comment="" />
-      <created>1759831130646</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1759831130646</updated>
-    </task>
     <servers />
   </component>
 </project>
