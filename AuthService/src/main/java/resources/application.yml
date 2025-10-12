@@ -8,10 +8,12 @@ spring:
     username: postgres
     password: Solize@123
   jpa:
+    show-sql: true
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
     properties:
       hibernate:
+        format_sql: true
         dialect: org.hibernate.dialect.PostgreSQLDialect
 
 # JWT config - must match your auth service

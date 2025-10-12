@@ -19,11 +19,20 @@ public class RefreshToken {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(unique = true , nullable = false , length = 512)
     private String token;
 
+    @Column(nullable = false)
     private Instant expiryDate;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_id")
+    // isRevoked is a flag indicating whether a refresh token is still valid for use.
+    // false → token is active, can be used for refreshing.
+    // true → token is revoked, meaning it’s no longer usable (user logged out, rotated, or reuse detected).
+
+    @Column(nullable = false)
+    private boolean isRevoked = false;
+
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "user_id", nullable = false)
     private AppUser user;
 }

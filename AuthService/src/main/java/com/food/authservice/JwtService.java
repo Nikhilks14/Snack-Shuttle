@@ -13,6 +13,9 @@ import org.springframework.stereotype.Service;
 import java.security.Key;
 import java.util.Base64;
 import java.util.Date;
+import java.util.Set;
+import java.util.UUID;
+import java.util.concurrent.ConcurrentHashMap;
 
 @Service
 public class JwtService {
@@ -20,6 +23,8 @@ public class JwtService {
     @Value("${security.jwt.secret}")
     private String SECRET_KEY ;
 
+    // In-memory blacklist (can replace with Redis later)
+    private final Set<String> blacklistedTokens = ConcurrentHashMap.newKeySet();
 
     public String generateAccessToken(AppUser user) {
         return Jwts.builder()
@@ -34,8 +39,9 @@ public class JwtService {
     public String generateRefreshToken(AppUser user) {
         return Jwts.builder()
                 .setSubject(user.getEmail())
-                .setIssuedAt(new Date())
-                .setExpiration(new Date(System.currentTimeMillis() + 1000L * 60 * 60 * 24 * 7)) // 7 days
+                .setIssuedAt(new Date())  // ensures uniqueness each time
+                .setExpiration(new Date(System.currentTimeMillis() + 1000L * 60 * 60 * 24 )) // 7 days
+                .setId(UUID.randomUUID().toString())
                 .signWith(getSignKey(), SignatureAlgorithm.HS256)
                 .compact();
     }
@@ -48,8 +54,21 @@ public class JwtService {
                 .getBody();
     }
 
+    public boolean isTokenExpired(String token){
+        return extractClaims(token).getExpiration().before(new Date());
+    }
+
+    public void blacklistToken(String token){
+        blacklistedTokens.add(token);
+    }
+
+    public boolean isTokenBlacklisted(String token){
+        return blacklistedTokens.contains(token);
+    }
+
     private Key getSignKey() {
-        byte[] keyBytes = Decoders.BASE64.decode(Base64.getEncoder().encodeToString(SECRET_KEY.getBytes()));
+        byte[] keyBytes = Decoders.BASE64
+                .decode(Base64.getEncoder().encodeToString(SECRET_KEY.getBytes()));
         return Keys.hmacShaKeyFor(keyBytes);
     }
 }

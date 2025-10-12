@@ -27,7 +27,17 @@ public class AuthController {
     }
 
     @PostMapping("/refresh")
-    public ResponseEntity<AuthResponse> refresh(@RequestParam String refreshToken) {
+    public ResponseEntity<AuthResponse> refresh(@RequestParam("refreshToken") String refreshToken) {
         return ResponseEntity.ok(authService.refreshToken(refreshToken));
+    }
+
+    @PostMapping("/logout")
+    public ResponseEntity<String> logout(
+            @RequestParam("email") String email,
+            @RequestHeader("Authorization") String authHeader) {
+
+        String token = authHeader.replace("Bearer ", "");
+        authService.logout(email,token);
+        return ResponseEntity.ok("Logged out and all tokens revoked.");
     }
 }
