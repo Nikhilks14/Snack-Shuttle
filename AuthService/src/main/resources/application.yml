@@ -3,11 +3,13 @@ server:
   port: 8081
 
 spring:
+  application:
+    name: auth-service
   datasource:
-    url: jdbc:postgresql://localhost:5432/Snack
+    url: jdbc:postgresql://localhost:5432/${db_name}
     driver-class-name: org.postgresql.Driver
-    username: postgres
-    password: Solize@123
+    username: ${username}
+    password: ${password}
   jpa:
     hibernate:
       ddl-auto: update
@@ -20,3 +22,8 @@ spring:
 security:
   jwt:
     secret: "bW92aW5nbWFwc2Nob29sc2hvcnRncmF2aXR5YmVjb21pbmdicmVlemVmbGFtZWhlcnM="
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
