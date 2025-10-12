@@ -1,4 +1,4 @@
-package com.food.authservice;
+package com.food.authservice.Repo;
 
 import com.food.authservice.entity.AppUser;
 import org.springframework.data.jpa.repository.JpaRepository;
