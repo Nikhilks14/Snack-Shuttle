@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="01d4f137-f0a8-4faf-a598-c4cbc2c87061" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/food/authservice/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/food/authservice/JwtService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AuthService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/foodDelivery/UserService/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/foodDelivery/UserService/controller/UserController.java" afterDir="false" />
+=======
+    <list default="true" id="4c3ccf88-43f9-4d2f-9ffa-9e153a0fd951" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +26,24 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.AuthServiceApplication.executor": "Run",
+<<<<<<< Updated upstream
     "Application.UserServiceApplication.executor": "Run",
     "git-widget-placeholder": "main2"
+=======
+    "Maven.AuthService [clean].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "F:/1Spring Boot/Snack-Shuttle/AuthService/src/main/java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "settings.sync"
+>>>>>>> Stashed changes
   }
 }]]></component>
   <component name="RunManager" selected="Application.UserServiceApplication">
