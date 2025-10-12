@@ -1,4 +1,4 @@
-package com.foodDelivery.UserService.dto;
+package com.food.UserService.dto;
 
 public class ChangePasswordDto {
 }

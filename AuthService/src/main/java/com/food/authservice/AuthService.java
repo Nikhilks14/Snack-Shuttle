@@ -4,6 +4,8 @@ import com.food.authservice.Repo.RefreshTokenRepository;
 import com.food.authservice.Repo.UserRepository;
 import com.food.authservice.Request.AuthRequest;
 import com.food.authservice.Request.SignupRequest;
+import com.food.authservice.Request.UserRequest;
+import com.food.authservice.client.UserClient;
 import com.food.authservice.entity.AppUser;
 import com.food.authservice.entity.RefreshToken;
 import com.food.authservice.entity.Role;
@@ -25,6 +27,7 @@ public class AuthService {
     private final PasswordEncoder passwordEncoder;
     private final JwtService jwtService;
     private final RefreshTokenRepository refreshTokenRepository;
+    private final UserClient userClient;
 
     public AuthResponse signUp(SignupRequest request){
         if(userRepository.findByEmail(request.getEmail()).isPresent()){
@@ -40,10 +43,12 @@ public class AuthService {
 
         userRepository.save(user);
 
-        // Save refresh token in db
-        // String refreshToken = createAndsaveRefreshToken(user);
-        // String accessToken = jwtService.generateAccessToken(user);
-
+        UserRequest userRequest = new UserRequest(
+                request.getUsername(),
+                request.getEmail(),
+                request.getRole() != null ? request.getRole().name() : "CUSTOMER"
+        );
+        userClient.createUser(userRequest);
 
         return issueToken(user);
     }
@@ -61,9 +66,6 @@ public class AuthService {
         refreshTokenRepository.revokeAllTokenByUser(user);
 
         // Issue new tokens
-//        String accessToken = jwtService.generateAccessToken(user);
-//        String refreshToken = createAndsaveRefreshToken(user);
-
         return issueToken(user);
     }
 
@@ -138,7 +140,8 @@ public class AuthService {
                 .token(token)
                 .user(user)
                 .expiryDate(Instant.now().plusSeconds(24*60*60))
-                .isRevoked(false)
+                .isRevoked(false
+                )
                 .build();
 
         RefreshToken save = refreshTokenRepository.save(refreshToken);

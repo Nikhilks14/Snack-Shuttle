@@ -1,4 +1,4 @@
-package com.foodDelivery.UserService.model;
+package com.food.UserService.model;
 
 public enum Role {
     CUSTOMER,

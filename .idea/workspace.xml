@@ -6,27 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="580f4b44-2f48-4742-b8c6-84caebe36f18" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AuthService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/food/authservice/AuthServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/food/authservice/AuthServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/food/authservice/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/food/authservice/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/foodDelivery/UserService/UserServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/food/UserService/UserServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/foodDelivery/UserService/config/JwtAuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/food/UserService/config/JwtAuthFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/foodDelivery/UserService/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/food/UserService/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/foodDelivery/UserService/controller/AdminUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/food/UserService/controller/AdminUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/foodDelivery/UserService/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/food/UserService/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/foodDelivery/UserService/dto/ChangePasswordDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/food/UserService/dto/ChangePasswordDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/foodDelivery/UserService/dto/UpdateUserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/food/UserService/dto/UpdateUserDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/foodDelivery/UserService/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/food/UserService/dto/UserDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/foodDelivery/UserService/entity/AppUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/food/UserService/entity/AppUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/foodDelivery/UserService/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/food/UserService/model/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/foodDelivery/UserService/repo/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/food/UserService/repo/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/foodDelivery/UserService/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/food/UserService/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/food/authservice/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/food/authservice/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/food/authservice/client/UserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/food/authservice/client/UserClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/food/UserService/config/JwtAuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/food/UserService/config/JwtAuthFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/food/UserService/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/food/UserService/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/food/UserService/controller/AdminUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/food/UserService/controller/AdminUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/food/UserService/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/food/UserService/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/food/UserService/dto/ChangePasswordDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/food/UserService/dto/ChangePasswordDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/food/UserService/dto/UpdateUserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/food/UserService/dto/UpdateUserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/food/UserService/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/food/UserService/dto/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/food/UserService/entity/AppUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/food/UserService/entity/AppUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/food/UserService/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/food/UserService/model/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/food/UserService/repo/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/food/UserService/repo/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/food/UserService/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/food/UserService/services/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,23 +38,23 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/AuthService/src/main/java/com/food/authservice/AuthService.java" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/AuthService/src/main/java/com/food/authservice/AuthService.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/AuthService/src/main/java/com/food/authservice/JwtService.java" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/AuthService/src/main/java/com/food/authservice/TokenCleanupTask.java" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/AuthService/src/main/java/com/food/authservice/controller/AuthController.java" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/UserService/src/main/java/com/food/UserService/UserServiceApplication.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/UserService/src/main/java/com/food/UserService/config/SecurityConfig.java" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/UserService/src/main/java/com/food/UserService/controller/AdminUserController.java" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/UserService/src/main/java/com/food/UserService/controller/UserController.java" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/UserService/src/main/java/com/food/UserService/services/UserService.java" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/UserService/src/main/java/com/food/UserService/controller/AdminUserController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/UserService/src/main/java/com/food/UserService/controller/UserController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/UserService/src/main/java/com/food/UserService/services/UserService.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="33yQVhQw3qvNxrpQCtVZ49YRnSl" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -69,24 +63,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.AuthServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.DiscoveryServerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UserServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.AuthService [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.UserService [clean].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AuthServiceApplication.executor": "Run",
+    "Application.DiscoveryServerApplication.executor": "Run",
+    "Application.UserServiceApplication.executor": "Run",
+    "Maven.AuthService [clean].executor": "Run",
+    "Maven.AuthService [install].executor": "Run",
+    "Maven.UserService [clean].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
   }
-}</component>
-  <component name="RunManager" selected="Application.AuthServiceApplication">
+}]]></component>
+  <component name="RunManager" selected="Application.UserServiceApplication">
     <configuration name="AuthServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <envs>
         <env name="db_name" value="food" />
@@ -143,8 +138,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AuthServiceApplication" />
         <item itemvalue="Application.UserServiceApplication" />
+        <item itemvalue="Application.AuthServiceApplication" />
         <item itemvalue="Application.DiscoveryServerApplication" />
       </list>
     </recent_temporary>

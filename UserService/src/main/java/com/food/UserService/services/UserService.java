@@ -1,9 +1,10 @@
-package com.foodDelivery.UserService.services;
+package com.food.UserService.services;
 
-import com.foodDelivery.UserService.dto.UpdateUserDto;
-import com.foodDelivery.UserService.entity.AppUser;
-import com.foodDelivery.UserService.model.Role;
-import com.foodDelivery.UserService.repo.UserRepository;
+import com.food.UserService.dto.UpdateUserDto;
+import com.food.UserService.dto.UserDto;
+import com.food.UserService.entity.AppUser;
+import com.food.UserService.model.Role;
+import com.food.UserService.repo.UserRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -49,5 +50,14 @@ public class UserService {
         AppUser u = getById(userId);
         u.setRole(role);
         return userRepository.save(u);
+    }
+
+    public AppUser createUser(UserDto  dto) {
+        AppUser user = new AppUser();
+        user.setEmail(dto.getEmail());
+        user.setName(dto.getName());
+        user.setPhone(dto.getPhone());
+        user.setRole(dto.getRole());
+        return userRepository.save(user);
     }
 }

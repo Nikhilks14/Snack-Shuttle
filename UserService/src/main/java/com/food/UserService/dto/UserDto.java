@@ -1,6 +1,6 @@
-package com.foodDelivery.UserService.dto;
+package com.food.UserService.dto;
 
-import com.foodDelivery.UserService.model.Role;
+import com.food.UserService.model.Role;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

@@ -1,6 +1,6 @@
-package com.foodDelivery.UserService.entity;
+package com.food.UserService.entity;
 
-import com.foodDelivery.UserService.model.Role;
+import com.food.UserService.model.Role;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

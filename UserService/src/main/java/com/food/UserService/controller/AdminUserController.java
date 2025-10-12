@@ -1,9 +1,11 @@
-package com.foodDelivery.UserService.controller;
+package com.food.UserService.controller;
 
-import com.foodDelivery.UserService.dto.UserDto;
-import com.foodDelivery.UserService.entity.AppUser;
-import com.foodDelivery.UserService.model.Role;
-import com.foodDelivery.UserService.services.UserService;
+
+import com.food.UserService.dto.UserDto;
+import com.food.UserService.entity.AppUser;
+import com.food.UserService.model.Role;
+import com.food.UserService.services.UserService;
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;

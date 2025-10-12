@@ -1,10 +1,11 @@
-package com.foodDelivery.UserService.controller;
+package com.food.UserService.controller;
 
-import com.foodDelivery.UserService.dto.UpdateUserDto;
-import com.foodDelivery.UserService.dto.UserDto;
-import com.foodDelivery.UserService.entity.AppUser;
-import com.foodDelivery.UserService.services.UserService;
+import com.food.UserService.dto.UpdateUserDto;
+import com.food.UserService.dto.UserDto;
+import com.food.UserService.entity.AppUser;
+import com.food.UserService.services.UserService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
@@ -14,6 +15,29 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 public class UserController {
     private final UserService userService;
+
+
+    @PostMapping()
+    public ResponseEntity<UserDto> createUser(@RequestBody UserDto userDto){
+        AppUser created = userService.createUser(userDto);
+        UserDto response = new UserDto(
+                created.getId(),
+                created.getEmail(),
+                created.getName(),
+                created.getPhone(),
+                created.getRole()
+        );
+
+        return ResponseEntity.status(HttpStatus.CREATED).body(response);
+
+    }
+
+    @GetMapping("/{email}")
+    public ResponseEntity<UserDto> getUserByEmail(@PathVariable String email) {
+        AppUser u = userService.getByEmail(email);
+        UserDto dto = new UserDto(u.getId(), u.getEmail(), u.getName(), u.getPhone(), u.getRole());
+        return ResponseEntity.ok(dto);
+    }
 
 
     // returns logged-in user details (token must be valid)

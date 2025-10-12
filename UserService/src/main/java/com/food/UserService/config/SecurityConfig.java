@@ -1,4 +1,4 @@
-package com.foodDelivery.UserService.config;
+package com.food.UserService.config;
 
 
 import lombok.RequiredArgsConstructor;

@@ -1,6 +1,6 @@
-package com.foodDelivery.UserService.repo;
+package com.food.UserService.repo;
 
-import com.foodDelivery.UserService.entity.AppUser;
+import com.food.UserService.entity.AppUser;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

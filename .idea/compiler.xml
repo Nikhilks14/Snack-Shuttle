@@ -7,10 +7,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="CartService" />
-        <module name="RestaurantService" />
-        <module name="OrderService" />
-        <module name="MenuService" />
       </profile>
       <profile name="Annotation profile for food-microservices" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -19,17 +15,13 @@
         <processorPath>
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
         </processorPath>
-        <module name="DeliveryService" />
         <module name="DiscoveryServer" />
-      </profile>
-      <profile name="Annotation profile for AuthService" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath>
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
-        </processorPath>
+        <module name="DeliveryService" />
+        <module name="MenuService" />
         <module name="AuthService" />
+        <module name="CartService" />
+        <module name="RestaurantService" />
+        <module name="OrderService" />
       </profile>
       <profile name="Annotation profile for UserService" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
