@@ -17,6 +17,9 @@
         <module>MenuService</module>
         <module>CartService</module>
         <module>UserService</module>
+        <module>DeliveryService</module>
+        <module>DiscoveryServer</module>
+
     </modules>
 
     <dependencyManagement>
@@ -25,6 +28,15 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
                 <version>3.3.4</version> <!-- use your version -->
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- ✅ ADD THIS: Spring Cloud BOM -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>2023.0.3</version> <!-- Compatible with Spring Boot 3.3.x -->
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
