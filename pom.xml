@@ -16,7 +16,6 @@
         <module>OrderService</module>
         <module>MenuService</module>
         <module>CartService</module>
-        <module>UserService</module>
         <module>DeliveryService</module>
         <module>DiscoveryServer</module>
 

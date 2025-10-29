@@ -22,8 +22,3 @@ spring:
 security:
   jwt:
     secret: "bW92aW5nbWFwc2Nob29sc2hvcnRncmF2aXR5YmVjb21pbmdicmVlemVmbGFtZWhlcnM="
-
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
