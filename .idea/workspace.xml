@@ -6,13 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="e2c9349f-a966-4455-a12d-4f548be393b5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09-10-2025_23_04_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09-10-2025_23_04__Changes_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/food/authservice/AuthServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/food/authservice/AuthServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CartService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CartService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CartService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/CartService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CartService/src/test/java/com/food/CartService/CartServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/CartService/src/test/java/com/food/CartService/CartPatientServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +22,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="com.intellij.jpb.JpaRepository" />
         <option value="Class" />
       </list>
     </option>
@@ -42,6 +42,9 @@
     &quot;accountId&quot;: &quot;7ce01746-6aee-4c30-8fff-976f8e22cb9f&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 6
@@ -57,11 +60,22 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.AuthServiceApplication.executor": "Run",
+    "Application.CartServiceApplication.executor": "Run",
+    "Application.OrderServiceApplication.executor": "Run",
+    "JUnit.InsurenceTests.testCreateAppointment.executor": "Run",
+    "JUnit.InsurenceTests.testInsurence.executor": "Run",
+    "JUnit.PatientTests.executor": "Run",
+    "JUnit.PatientTests.testPatientRepo.executor": "Run",
+    "JUnit.PatientTests.testTransaction (1).executor": "Run",
+    "JUnit.PatientTests.testTransaction.executor": "Debug",
+    "JUnit.PatientTests.testTransactionMethods.executor": "Run",
     "Maven.AuthService [clean].executor": "Run",
     "Maven.AuthService [install].executor": "Run",
+    "Maven.CartService [clean].executor": "Run",
+    "Maven.OrderService [clean].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main3",
+    "git-widget-placeholder": "#5 on main3",
     "kotlin-language-version-configured": "true",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
@@ -72,22 +86,26 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.food.OrderService.service" />
       <recent name="com.food.authservice" />
       <recent name="com.food.authservice.service" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.food.CartService.service" />
+    </key>
   </component>
-  <component name="RunManager">
-    <configuration name="AuthServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.InsurenceTests.testCreateAppointment">
+    <configuration name="CartServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <envs>
-        <env name="db_name" value="food" />
-        <env name="password" value="Solize@123" />
         <env name="username" value="postgres" />
+        <env name="password" value="Solize@123" />
+        <env name="db_name" value="HMS" />
       </envs>
-      <option name="MAIN_CLASS_NAME" value="com.food.authservice.AuthServiceApplication" />
-      <module name="AuthService" />
+      <option name="MAIN_CLASS_NAME" value="com.food.CartService.CartServiceApplication" />
+      <module name="CartService" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.food.authservice.*" />
+          <option name="PATTERN" value="com.food.CartService.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -95,9 +113,104 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="InsurenceTests.testCreateAppointment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CartService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.food.CartService.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.food.CartService" />
+      <option name="MAIN_CLASS_NAME" value="com.food.CartService.InsurenceTests" />
+      <option name="METHOD_NAME" value="testCreateAppointment" />
+      <option name="TEST_OBJECT" value="method" />
+      <envs>
+        <env name="username" value="postgres" />
+        <env name="password" value="Solize@123" />
+        <env name="db_name" value="HMS" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InsurenceTests.testInsurence" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CartService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.food.CartService.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.food.CartService" />
+      <option name="MAIN_CLASS_NAME" value="com.food.CartService.InsurenceTests" />
+      <option name="METHOD_NAME" value="testInsurence" />
+      <option name="TEST_OBJECT" value="method" />
+      <envs>
+        <env name="username" value="postgres" />
+        <env name="password" value="Solize@123" />
+        <env name="db_name" value="HMS" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PatientTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CartService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.food.CartService.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.food.CartService" />
+      <option name="MAIN_CLASS_NAME" value="com.food.CartService.PatientTests" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <envs>
+        <env name="username" value="postgres" />
+        <env name="password" value="Solize@123" />
+        <env name="db_name" value="HMS" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PatientTests.testTransactionMethods" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CartService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.food.CartService.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.food.CartService" />
+      <option name="MAIN_CLASS_NAME" value="com.food.CartService.PatientTests" />
+      <option name="METHOD_NAME" value="testTransactionMethods" />
+      <option name="TEST_OBJECT" value="method" />
+      <envs>
+        <env name="username" value="postgres" />
+        <env name="password" value="Solize@123" />
+        <env name="db_name" value="HMS" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.CartServiceApplication" />
+      <item itemvalue="JUnit.InsurenceTests.testCreateAppointment" />
+      <item itemvalue="JUnit.InsurenceTests.testInsurence" />
+      <item itemvalue="JUnit.PatientTests" />
+      <item itemvalue="JUnit.PatientTests.testTransactionMethods" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AuthServiceApplication" />
+        <item itemvalue="JUnit.InsurenceTests.testCreateAppointment" />
+        <item itemvalue="JUnit.InsurenceTests.testInsurence" />
+        <item itemvalue="Application.CartServiceApplication" />
+        <item itemvalue="JUnit.PatientTests.testTransactionMethods" />
+        <item itemvalue="JUnit.PatientTests" />
       </list>
     </recent_temporary>
   </component>
@@ -110,5 +223,15 @@
       <updated>1761061086625</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.StackOverflowError" package="java.lang" />
+          <option name="timeStamp" value="4" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
