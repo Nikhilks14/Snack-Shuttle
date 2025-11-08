@@ -1,10 +1,11 @@
 
-server:
-  port: 8081
+
+Server:
+  port: 8082
 
 spring:
   application:
-    name: auth-service
+    name: OrderService
   datasource:
     url: jdbc:postgresql://localhost:5432/${db_name}
     driver-class-name: org.postgresql.Driver
@@ -13,12 +14,7 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
-    show-sql: true
+      show-sql: true
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
-
-# JWT config - must match your auth service
-security:
-  jwt:
-    secret: "bW92aW5nbWFwc2Nob29sc2hvcnRncmF2aXR5YmVjb21pbmdicmVlemVmbGFtZWhlcnM="

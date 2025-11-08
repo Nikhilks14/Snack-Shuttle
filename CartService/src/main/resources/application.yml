@@ -4,21 +4,31 @@ server:
 
 spring:
   application:
-    name: auth-service
+    name: cart-service
+
   datasource:
     url: jdbc:postgresql://localhost:5432/${db_name}
     driver-class-name: org.postgresql.Driver
     username: ${username}
     password: ${password}
   jpa:
+
+    defer-datasource-initialization : true
+
+    sql:
+      init:
+        mode : always
+        data-locations=classpath : data
+
     hibernate:
       ddl-auto: update
     show-sql: true
+
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
 
-# JWT config - must match your auth service
-security:
-  jwt:
-    secret: "bW92aW5nbWFwc2Nob29sc2hvcnRncmF2aXR5YmVjb21pbmdicmVlemVmbGFtZWhlcnM="
+
+#spring.jpa.defer-datasource-initialization=true
+#spring.sql.init.mode=always
+#spring.sql.init.data-locations=classpath:data.sql
